@@ -1,1 +1,30 @@
-'this is a simple app' 
+<!DOCTYPE html>
+    <head>
+        <title>Lets Play: Ruby</title>
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/topcoat/0.6/css/topcoat-desktop-dark.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/960gs/0/960.css">
+        <style>
+        BODY {
+            color:#FFF;
+        }
+        LABEL, INPUT, BUTTON {
+            display:block;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container_12">
+            <div class="grid_12">
+                <form action="/login" method="POST">
+                    <h3>Username</h3>
+                    <input type="text" name="user[name]" id="username" class="topcoat-text-input--large" value="">
+                    <h3>Password</h3>
+                    <input type="text" name="user[password]" id="password" class="topcoat-text-input--large" value="">
+                    <p>
+                        <button class="topcoat-button--large--cta">Login</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
